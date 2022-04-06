@@ -2,6 +2,8 @@
   "version": 2,
   "projects": {
     "react-demo-app": "apps/react-demo-app",
-    "react-demo-app-e2e": "apps/react-demo-app-e2e"
+    "react-demo-app-e2e": "apps/react-demo-app-e2e",
+    "shared-storybook": "libs/shared/storybook",
+    "shared-ui-typography": "libs/shared/ui/typography"
   }
 }

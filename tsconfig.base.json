@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@uie-sessions/shared/storybook": ["libs/shared/storybook/src/index.ts"],
+      "@uie-sessions/shared/ui/typography": [
+        "libs/shared/ui/typography/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
