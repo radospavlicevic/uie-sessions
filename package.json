@@ -10,6 +10,7 @@
   "private": true,
   "dependencies": {
     "autoprefixer": "^10.4.4",
+    "clsx": "^1.1.1",
     "core-js": "^3.6.5",
     "postcss": "^8.4.12",
     "react": "17.0.2",

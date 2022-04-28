@@ -1,11 +1,15 @@
 const { join } = require('path');
 const { createGlobPatternsForDependencies } = require('@nrwl/react/tailwind');
-const base = require('../../../twconfig.base');
 
 module.exports = {
+  presets: [require('../../../twconfig.base')],
   content: [
-    join(__dirname, '../ui/**/**/!(*.stories|*.spec).{ts,tsx,html}'),
+    join(__dirname, '../ui/**/!(*.spec).{ts,tsx,html}'),
     ...createGlobPatternsForDependencies(__dirname),
   ],
-  ...base,
+  theme: {
+    extend: {
+    },
+  },
+  plugins: [],
 }
