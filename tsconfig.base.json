@@ -16,6 +16,16 @@
     "baseUrl": ".",
     "paths": {
       "@uie-sessions/shared/storybook": ["libs/shared/storybook/src/index.ts"],
+      "@uie-sessions/shared/types": ["libs/shared/types/src/index.ts"],
+      "@uie-sessions/shared/ui/icons/factory": [
+        "libs/shared/ui/icons/factory/src/index.ts"
+      ],
+      "@uie-sessions/shared/ui/icons/outline": [
+        "libs/shared/ui/icons/outline/src/index.ts"
+      ],
+      "@uie-sessions/shared/ui/icons/solid": [
+        "libs/shared/ui/icons/solid/src/index.ts"
+      ],
       "@uie-sessions/shared/ui/typography": [
         "libs/shared/ui/typography/src/index.ts"
       ]
