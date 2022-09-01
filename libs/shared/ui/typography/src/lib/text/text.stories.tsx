@@ -8,7 +8,8 @@ export default {
 
 const Template: Story<TextProps> = (args) => <Text {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Typography = Template.bind({});
+
+Typography.args = {
   text: 'Test text',
 };
