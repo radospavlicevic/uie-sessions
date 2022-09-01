@@ -4,10 +4,15 @@
     "react-demo-app": "apps/react-demo-app",
     "react-demo-app-e2e": "apps/react-demo-app-e2e",
     "shared-storybook": "libs/shared/storybook",
+    "shared-style-builder": "libs/shared/style-builder",
+    "shared-style-injection": "libs/shared/style-injection",
     "shared-types": "libs/shared/types",
+    "shared-ui-button-builders": "libs/shared/ui/button-builders",
+    "shared-ui-buttons": "libs/shared/ui/buttons",
     "shared-ui-icons-factory": "libs/shared/ui/icons/factory",
     "shared-ui-icons-outline": "libs/shared/ui/icons/outline",
     "shared-ui-icons-solid": "libs/shared/ui/icons/solid",
-    "shared-ui-typography": "libs/shared/ui/typography"
+    "shared-ui-typography": "libs/shared/ui/typography",
+    "shared-ui-wip": "libs/shared/ui/wip"
   }
 }

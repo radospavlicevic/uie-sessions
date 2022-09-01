@@ -16,7 +16,19 @@
     "baseUrl": ".",
     "paths": {
       "@uie-sessions/shared/storybook": ["libs/shared/storybook/src/index.ts"],
+      "@uie-sessions/shared/style-builder": [
+        "libs/shared/style-builder/src/index.ts"
+      ],
+      "@uie-sessions/shared/style-injection": [
+        "libs/shared/style-injection/src/index.ts"
+      ],
       "@uie-sessions/shared/types": ["libs/shared/types/src/index.ts"],
+      "@uie-sessions/shared/ui/button-builders": [
+        "libs/shared/ui/button-builders/src/index.ts"
+      ],
+      "@uie-sessions/shared/ui/buttons": [
+        "libs/shared/ui/buttons/src/index.ts"
+      ],
       "@uie-sessions/shared/ui/icons/factory": [
         "libs/shared/ui/icons/factory/src/index.ts"
       ],
@@ -28,7 +40,8 @@
       ],
       "@uie-sessions/shared/ui/typography": [
         "libs/shared/ui/typography/src/index.ts"
-      ]
+      ],
+      "@uie-sessions/shared/ui/wip": ["libs/shared/ui/wip/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,6 +1,6 @@
 
 
-# UieSessions
+# UIE Sessions
 
 This project was generated using [Nx](https://nx.dev).
 
@@ -70,6 +70,12 @@ Run `nx affected:test` to execute the unit tests affected by a change.
 Run `nx e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
 
 Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
+
+## Running storybook
+
+Run `nx run project-name:storybook` to serve [Storybook](https://storybook.js.org). Navigate to http://localhost:4400/
+
+nx storybook [doc](https://nx.dev/storybook/overview-react)
 
 ## Understand your workspace
 

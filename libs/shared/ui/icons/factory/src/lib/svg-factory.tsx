@@ -1,20 +1,8 @@
 import { forwardRef, ForwardRefRenderFunction } from 'react';
-import clsx from 'clsx';
 import { EmptyObject, AnyProps } from '@uie-sessions/shared/types';
 import { SVGComponent, SVGIconProps, SVGRenderFunction } from './types';
 
-const getProps = <P extends SVGIconProps>(
-  defaultProps: Partial<P>,
-  props: P
-): P => {
-  const className = clsx(defaultProps.className, props.className);
-
-  return {
-    ...defaultProps,
-    ...props,
-    className,
-  };
-};
+export { SVGComponent } from './types';
 
 export const createSVGIcon = <
   P extends AnyProps = EmptyObject,
@@ -22,12 +10,13 @@ export const createSVGIcon = <
 >(
   Svg: SVGRenderFunction<P>,
   displayName: string,
-  defaultProps: D | EmptyObject = {}
+  defaultProps?: D
 ) => {
-  const SVG: SVGComponent<P> = (props) => (
-    <Svg {...getProps(defaultProps, props)} />
-  );
+  const SVG: SVGComponent<P> = (props) => {
+    return <Svg {...props} />;
+  };
   SVG.displayName = displayName;
+  SVG.defaultProps = defaultProps;
 
   return SVG;
 };
@@ -38,12 +27,13 @@ export const forwardSVGIconRef = <
 >(
   renderSVG: ForwardRefRenderFunction<SVGSVGElement, SVGIconProps<P>>,
   displayName: string,
-  defaultProps: D | EmptyObject = {}
+  defaultProps?: D
 ) => {
   const SVG = forwardRef<SVGSVGElement, SVGIconProps<P>>((props, ref) => {
-    return renderSVG(getProps(defaultProps, props), ref);
+    return renderSVG(props, ref);
   });
   SVG.displayName = displayName;
+  SVG.defaultProps = defaultProps;
 
   return SVG;
 };
