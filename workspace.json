@@ -5,6 +5,8 @@
     "react-demo-app-e2e": "apps/react-demo-app-e2e",
     "shared-storybook": "libs/shared/storybook",
     "shared-types": "libs/shared/types",
+    "shared-ui-control-group-components": "libs/shared/ui/control-group/components",
+    "shared-ui-control-group-factory": "libs/shared/ui/control-group/factory",
     "shared-ui-icons-factory": "libs/shared/ui/icons/factory",
     "shared-ui-icons-outline": "libs/shared/ui/icons/outline",
     "shared-ui-icons-solid": "libs/shared/ui/icons/solid",

@@ -17,6 +17,12 @@
     "paths": {
       "@uie-sessions/shared/storybook": ["libs/shared/storybook/src/index.ts"],
       "@uie-sessions/shared/types": ["libs/shared/types/src/index.ts"],
+      "@uie-sessions/shared/ui/control-group/factory": [
+        "libs/shared/ui/control-group/factory/src/index.ts"
+      ],
+      "@uie-sessions/shared/ui/control-group/components": [
+        "libs/shared/ui/control-group/components/src/index.ts"
+      ],
       "@uie-sessions/shared/ui/icons/factory": [
         "libs/shared/ui/icons/factory/src/index.ts"
       ],
